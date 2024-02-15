@@ -1,0 +1,9 @@
+steps:
+- name: 'golang'
+  script: |
+    go build failed-test/main.go
+- name: 'golang'
+  script: |
+    cd failed-test
+    go test ./...
+tags: ["cloud-build-failures"]

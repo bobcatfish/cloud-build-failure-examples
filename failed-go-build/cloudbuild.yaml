@@ -1,8 +1,5 @@
 steps:
 - name: 'golang'
-  entrypoint: /bin/bash
-  args:
-  - -c
-  - |
-    go build
+  script: |
+    go build failed-go-build/main.go
 tags: ["cloud-build-failures"]
